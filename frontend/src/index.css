@@ -1,0 +1,337 @@
+/* =================================
+   Global Styles
+   ================================= */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --secondary-color: #6c757d;
+  --danger-color: #dc3545;
+  --danger-hover: #c82333;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #212529;
+  --white-color: #ffffff;
+  --border-color: #dee2e6;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* =================================
+   Header
+   ================================= */
+.header {
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.header-links a,
+.header-links button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-links a:hover,
+.header-links button:hover {
+  color: var(--primary-color);
+}
+
+.header-links .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* =================================
+   Forms & Cards
+   ================================= */
+.form-container {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box; /* Important for padding to work correctly */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.form-actions-center {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* =================================
+   Buttons
+   ================================= */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.65rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-danger {
+  color: var(--white-color);
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.btn-link {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* =================================
+   Alerts & Messages
+   ================================= */
+.alert {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* =================================
+   Dashboard & Tasks
+   ================================= */
+.page-title {
+  text-align: center;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin: 1rem 0 2rem;
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.task-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  min-height: 80px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.task-item:hover {
+  background-color: #fcfcfc;
+}
+
+.task-item-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.task-item input[type='checkbox'] {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.25rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.task-item-details h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.task-item-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+}
+
+.task-item.completed .task-item-details h3,
+.task-item.completed .task-item-details p {
+  text-decoration: line-through;
+  color: var(--secondary-color);
+}
+
+.task-item-delete {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--danger-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.task-item-delete:hover {
+  text-decoration: underline;
+}
+
+.loading,
+.no-tasks {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  padding: 2rem;
+}
