@@ -21,7 +21,7 @@ You will need **two separate terminals** open to run this project: one for the b
 
 1.  **Navigate to the backend folder:**
     ```bash
-    cd Crud-Assignment/backend
+    cd WebApp/backend
     ```
 
 2.  **Install dependencies:**
@@ -58,7 +58,7 @@ You will need **two separate terminals** open to run this project: one for the b
 
 1.  **Open a new terminal** and navigate to the frontend folder:
     ```bash
-    cd Crud-Assignment/frontend
+    cd WebApp/frontend
     ```
 
 2.  **Install dependencies:**
